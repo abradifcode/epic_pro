@@ -1,0 +1,25 @@
+@import "../vendors/css/normalize";
+@import "includes/variables";
+@import "includes/font";
+@import "includes/global";
+@import "../css/slick";
+@import "../css/slick-theme";
+
+@import "../blocks/header/header";
+@import "../blocks/main-navigation/main-navigation";
+@import "../blocks/promo/promo";
+@import "../blocks/about-promo/about-promo";
+@import "../blocks/clients/clients";
+@import "../blocks/production/production";
+@import "../blocks/carousel/carousel";
+@import "../blocks/phosphate/phosphate";
+@import "../blocks/about-company/about-company";
+@import "../blocks/application-area/application-area";
+@import "../blocks/contact/contact";
+@import "../blocks/phosphate-table/phosphate-table";
+@import "../blocks/order/order";
+@import "../blocks/product/product";
+@import "../blocks/promo-application-area/promo-application-area";
+@import "../blocks/footer/footer";
+
+

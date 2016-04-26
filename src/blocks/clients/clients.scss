@@ -1,0 +1,63 @@
+// clients
+.clients {
+  padding-bottom: 83px;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    font-size: $font-size-secondary;
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    padding-right: 330px;
+    padding-bottom: 32px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 148px;
+    border: 1px solid $color-grey;
+    margin-top: -1px;
+    margin-left: -1px;
+    position: relative;
+
+    &:before {
+      content: attr(data-name);
+      position: absolute;
+      color: #fff;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      text-align: center;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $color-main;
+      opacity: 0;
+      transition: .2s;
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
+  }
+}
+
+.about-us__clients {
+  padding-bottom: 48px;
+}

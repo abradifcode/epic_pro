@@ -1,0 +1,49 @@
+// product
+.product {
+  flex: 1;
+  padding-top: 19px;
+  padding-bottom: 75px;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    font-size: $font-size-primary;
+    color: $color-secondary;
+    text-align: center;
+    padding: 0 90px 45px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+  }
+
+  &__wrapper {
+    @include flex;
+  }
+
+  &__content {
+    width: 59%;
+  }
+
+  &__image {
+    width: 262px;
+    padding-top: 4px;
+
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  &__btn {
+    font-size: 16px;
+    margin-top: 7px;
+    padding: 13px 39px;
+  }
+}

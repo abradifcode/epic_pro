@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Avenir Next", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn {
+  color: #fff;
+  background-color: $color-main;
+  text-align: center;
+  padding: 13px 28px;
+  display: inline-block;
+  transition: .2s;
+
+  &:hover {
+    background-color: lighten($color-main, 10%);
+  }
+
+  &:active {
+    background-color: darken($color-main, 10%);
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: $color-main;
+    border: 3px solid $color-main;
+
+    &:hover {
+      background-color: $color-main;
+      color: #fff;
+    }
+
+    &:active {
+      background-color: darken($color-main, 10%);
+      border-color: darken($color-main, 10%);
+    }
+  }
+}
+
+figure {
+  margin: 0;
+}

@@ -1,0 +1,18 @@
+// production
+.production {
+  position: relative;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    font-size: $font-size-secondary;
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    padding-right: 420px;
+    padding-bottom: 42px;
+  }
+}

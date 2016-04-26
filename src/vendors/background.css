@@ -1,0 +1,27 @@
+.bread {
+  background: svg-load(../images/application-area__image--bread.svg, fill=#fff);
+}
+.fish {
+  background: svg-load(../images/application-area__image--fish.svg, fill=#fff);
+}
+.juice {
+  background: svg-load(../images/application-area__image--juice.svg, fill=#fff);
+}
+.meat {
+  background: svg-load(../images/application-area__image--meat.svg, fill=#fff);
+}
+.milk {
+  background: svg-load(../images/application-area__image--milk.svg, fill=#fff);
+}
+.mineral {
+  background: svg-load(../images/application-area__image--mineral.svg, fill=#fff);
+}
+.pasta {
+  background: svg-load(../images/application-area__image--pasta.svg, fill=#fff);
+}
+.vegetables {
+  background: svg-load(../images/application-area__image--vegetables.svg, fill=#fff);
+}
+.water {
+  background: svg-load(../images/application-area__image--water.svg, fill=#fff);
+}

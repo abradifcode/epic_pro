@@ -1,0 +1,29 @@
+// main-nav
+.main-nav {
+  background-color: $color-secondary;
+
+  &__container {
+    @include container;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  &__item {
+
+    a {
+      border: 3px solid transparent;
+      color: #fff;
+      padding: 14px 42px;
+      display: block;
+
+      &:hover,
+      &.active {
+        border-color: #7890f6;
+      }
+    }
+  }
+}

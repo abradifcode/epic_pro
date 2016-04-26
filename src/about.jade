@@ -1,0 +1,27 @@
+doctype html
+html(lang="ru")
+  - title = "О компании"
+  include blocks/head/head
+
+  body
+    <!--[if IE 8]>
+    p Вы используете #[strong устаревшую версию] браузера. Пожалуйста, #[a(href="http://browsehappy.com/") обновите браузер] на официальном сайте, чтобы просматривать полную версию сайта.
+    <![endif]-->
+
+    include blocks/header/header
+    include blocks/main-navigation/main-navigation
+    include blocks/about-company/about-company
+    // about-promo
+    section.about-promo.about-us__about-promo
+      .about-promo__container
+        .about-promo__image
+          img(src="images/about__short-text@2x.jpg", alt="Reephos", width="457", height="333")
+        .about-promo__content
+          h2.about-promo__title Reephos Chemical Russia
+          p.about-promo__text Вы можете сделать заказ прямо на сайте, обраться к нам по электронному адресу: #[a(href="mailto:sales@reephos.ru") sales@reephos.ru] или по телефону: #[a(href="tel:74956041400") +7 495 604 14 00]
+          p.about-promo__text Наши специалисты оперативно ответят на все Ваши вопросы и дадутнеобходимые консультации. Мы работаем для удовлетворения Ваших потребностей в высококачественных фосфатах в этих цехах на этом оборудовании.
+          a.btn.about-promo__btn(href="order.html") Сделать заказ
+    include blocks/clients/clients
+    include blocks/production/production
+    include blocks/footer/footer
+    include blocks/js-script/js-script

@@ -1,0 +1,36 @@
+.carousel {
+  &__container {
+    @include container;
+  }
+
+  &__next,
+  &__prev {
+    position: absolute;
+    bottom: 45%;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;/*IE7 life-saver */
+    margin: 5px;
+    padding: 3px 10px;
+    font-size: 12px;
+    width: 68px;
+    height: 52px;
+    border: 3px solid rgba(255,255,255,.3);
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36.28 19.17' stroke='%23fff'%3E%3Cdefs%3E%3Cstyle%3E.cls-1,.cls-2{fill:none;stroke-miterlimit:10;stroke-width:1.8px}.cls-2{stroke-linecap:round}%3C/style%3E%3C/defs%3E%3Ctitle%3Ecarousel__arrow%3C/title%3E%3Cpath class='cls-1' d='M0 9.59h34.86'/%3E%3Cpath class='cls-2' d='M35.38 9.59L26.63.9M26.63 18.27l8.75-8.68'/%3E%3C/svg%3E") no-repeat center;
+    background-size: 65%;
+    transition: border-color .2s;
+
+    &:hover {
+      border-color: rgba(255,255,255,1);
+    }
+  }
+
+  &__prev {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  &__next {
+    right: 0;
+  }
+}

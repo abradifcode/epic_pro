@@ -1,0 +1,14 @@
+// footer
+.footer {
+  border-top: 4px solid #ebebeb;
+  padding: 29px 0 37px;
+
+  &__container {
+    @include container;
+    @include flex;
+  }
+
+  a {
+    color: $color-secondary;
+  }
+}

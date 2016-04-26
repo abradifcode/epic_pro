@@ -1,0 +1,30 @@
+// order
+.order
+  .order__container
+    h1.order__title Сделать заказ
+    .order-form
+      h2.order-form__title Будем рады ответить на Ваши вопросы
+      form(action="").order-form__form#order-form
+        .order-form__wrapper
+          .order-form__content
+            label.order-form__label.order-form__text(for="name") Введите Ваше имя#[b.order-form__text--required *]
+            input.order-form__input(type="text", id="name", required)
+
+            label.order-form__label.order-form__text(for="email") Введите  email#[b.order-form__text--required *]
+            input.order-form__input(type="email", id="email", required)
+
+            label.order-form__label.order-form__text(for="tel") Введите номер телефона#[b.order-form__text--required *]
+            input.order-form__input(type="tel", id="tel", required)
+
+            label.order-form__label.order-form__text(for="company") Название компании#[b.order-form__text--required *]
+            input.order-form__input(type="text", id="company", required)
+
+          .order-form__content
+            label.order-form__label.order-form__text(for="city") Укажите город#[b.order-form__text--required *]
+            input.order-form__input(type="text", id="city", required)
+
+            label.order-form__label.order-form__text(for="massage") Введите интересующие вас позиции#[b.order-form__text--required *]
+            textarea.order-form__input.order-form__input--large(form="order-form", required)
+
+        input.btn.order-form__btn(type="submit", value="Отправить заявку")
+        span.order-form__text.order-form__ps #[b.order-form__text--required *] — #[u обязательные для заполнения поля]

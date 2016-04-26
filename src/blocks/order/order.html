@@ -1,0 +1,32 @@
+
+<!-- order-->
+<div class="order">
+  <div class="order__container">
+    <h1 class="order__title">Сделать заказ</h1>
+    <div class="order-form">
+      <h2 class="order-form__title">Будем рады ответить на Ваши вопросы</h2>
+      <form action="" id="order-form" class="order-form__form">
+        <div class="order-form__wrapper">
+          <div class="order-form__content">
+            <label for="name" class="order-form__label order-form__text">Введите Ваше имя<b class="order-form__text--required">*</b></label>
+            <input type="text" id="name" required="required" class="order-form__input"/>
+            <label for="email" class="order-form__label order-form__text">Введите  email<b class="order-form__text--required">*</b></label>
+            <input type="email" id="email" required="required" class="order-form__input"/>
+            <label for="tel" class="order-form__label order-form__text">Введите номер телефона<b class="order-form__text--required">*</b></label>
+            <input type="tel" id="tel" required="required" class="order-form__input"/>
+            <label for="company" class="order-form__label order-form__text">Название компании<b class="order-form__text--required">*</b></label>
+            <input type="text" id="company" required="required" class="order-form__input"/>
+          </div>
+          <div class="order-form__content">
+            <label for="city" class="order-form__label order-form__text">Укажите город<b class="order-form__text--required">*</b></label>
+            <input type="text" id="city" required="required" class="order-form__input"/>
+            <label for="massage" class="order-form__label order-form__text">Введите интересующие вас позиции<b class="order-form__text--required">*</b></label>
+            <textarea form="order-form" required="required" class="order-form__input order-form__input--large"></textarea>
+          </div>
+        </div>
+        <input type="submit" value="Отправить заявку" class="btn order-form__btn"/><span class="order-form__text order-form__ps"><b class="order-form__text--required">*</b> — 
+          <u>обязательные для заполнения поля</u></span>
+      </form>
+    </div>
+  </div>
+</div>

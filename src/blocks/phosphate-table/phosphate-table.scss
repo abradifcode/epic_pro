@@ -1,0 +1,76 @@
+// product-table
+.product-table {
+  flex: 1;
+  padding-top: 18px;
+  padding-bottom: 36px;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    font-size: $font-size-primary;
+    color: $color-secondary;
+    text-align: center;
+    padding: 0 90px;
+    padding-bottom: 12px;
+  }
+
+  &__table {
+    font-size: 14px;
+    color: #131313;
+    border: 3px solid #c4c4c4;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+
+    thead {
+      color: $color-secondary;
+
+      .product-table__td {
+        padding: 9px 0 7px;
+      }
+    }
+
+    td {
+      border: 3px solid #c4c4c4;
+    }
+  }
+
+  &__td {
+    padding: 6px 0 16px;
+    text-align: center;
+
+    &--number {width: 38px;}
+    &--name {width: 185px;}
+    &--abbreviation {width: 133px;}
+    &--face {width: 115px;}
+    &--standart {width: 100px;}
+    &--main-application {width: 266px;}
+    &--dosage {width: 104px;}
+  }
+
+  &__pagination {
+    text-align: center;
+
+    .product-table__text {
+      font-size: 16px;
+      color: #a3a3a3;
+      margin: 0 29px;
+    }
+  }
+
+  &__prev,
+  &__next {
+    display: inline-block;
+    width: 36px;
+    height: 18px;
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36.28 19.17' stroke='%23a3a3a3'%3E%3Cdefs%3E%3Cstyle%3E.cls-1,.cls-2{fill:none;stroke-miterlimit:10;stroke-width:1.8px}.cls-2{stroke-linecap:round}%3C/style%3E%3C/defs%3E%3Ctitle%3Ecarousel__arrow%3C/title%3E%3Cpath class='cls-1' d='M0 9.59h34.86'/%3E%3Cpath class='cls-2' d='M35.38 9.59L26.63.9M26.63 18.27l8.75-8.68'/%3E%3C/svg%3E") no-repeat center;
+    background-size: cover;
+    position: relative;
+    top: 3px;
+  }
+
+  &__prev {
+    transform: rotate(180deg);
+  }
+}

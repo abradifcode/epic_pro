@@ -1,0 +1,47 @@
+$color-main: #2ba536;
+$color-secondary: #3e60f2;
+$color-grey: #c0c0c0;
+
+$font-size-primary: 2.57em;
+$font-size-secondary: 1.8em;
+$font-size-third: 1.15em;
+
+$container: 965px;
+
+$box-shadow: 5px 4px 7px rgba(0,0,0,.2);
+
+@mixin retina {
+  @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min--moz-device-pixel-ratio: 2),
+    (o-min-device-pixel-ratio: 2/1),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      @content;
+    }
+}
+
+@mixin container {
+  width: $container;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin marked-border {
+  border: 3px solid #ebebeb;
+  box-shadow: 5px 4px 7px rgba(0,0,0,.0);
+  transition: .2s;
+
+  &:hover,
+  &:focus {
+    border-color: $color-secondary;
+    box-shadow: 5px 4px 7px rgba(0,0,0,.2);
+  }
+}

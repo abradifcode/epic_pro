@@ -1,0 +1,95 @@
+// about promo
+.about-promo {
+  padding-top: 96px;
+  padding-bottom: 52px;
+
+  &__container {
+    @include container;
+    @include flex;
+  }
+
+  &__image {
+    width: 457px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      background: url(../images/logo--watermark@1x.png) no-repeat center;
+
+      @include retina {
+        background: url(../images/logo--watermark@2x.png) no-repeat center;
+        background-size: 37%;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+
+  &__content {
+    width: 50%;
+    padding-top: 25px;
+    padding-left: 112px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: -29px;
+      width: 128px;
+      height: 3px;
+      background-color: $color-main;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-secondary;
+    padding-bottom: 12px;
+  }
+
+  &__text {
+    padding-bottom: 16px;
+
+    a {
+      color: $color-secondary;
+    }
+  }
+
+  &__btn {
+    margin-top: 10px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: -60px;
+      width: 36px;
+      height: 18px;
+      background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36.28 19.17' stroke='%232ba536'%3E%3Cdefs%3E%3Cstyle%3E.cls-1,.cls-2{fill:none;stroke-miterlimit:10;stroke-width:1.8px}.cls-2{stroke-linecap:round}%3C/style%3E%3C/defs%3E%3Ctitle%3Ecarousel__arrow%3C/title%3E%3Cpath class='cls-1' d='M0 9.59h34.86'/%3E%3Cpath class='cls-2' d='M35.38 9.59L26.63.9M26.63 18.27l8.75-8.68'/%3E%3C/svg%3E") no-repeat center;
+    }
+  }
+}
+
+.about-us__about-promo {
+  padding-top: 28px;
+  padding-bottom: 44px;
+
+  .about-promo__btn {
+    margin-top: 16px;
+
+    &:before {
+      content: none;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+// about-company
+.about-company {
+  padding-top: 19px;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    font-size: $font-size-primary;
+    color: $color-secondary;
+    text-align: center;
+    padding-bottom: 9px;
+  }
+
+  &__text {
+    font-size: $font-size-third;
+    line-height: 1.4em;
+    padding-bottom: 22px;
+  }
+}
